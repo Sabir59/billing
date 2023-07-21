@@ -13,4 +13,9 @@
   padding-top: 32px;
   padding-bottom: 110px;
   color: #fff;
+
+  &__content {
+    max-width: 1012px;
+    margin: auto;
+  }
 }

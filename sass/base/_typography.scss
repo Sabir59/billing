@@ -85,12 +85,28 @@ $heading-lg: 600 32px/150% "Poppins", sans-serif;
 $heading-md: 400 24px/150% "Poppins", sans-serif;
 $heading-sm: 600 20px/150% "Poppins", sans-serif;
 
+$text-body-xl: 400 20px/200% "Poppins", sans-serif;
+$text-body-lg: 400 18px/200% "Poppins", sans-serif;
+
 .heading-xxl {
   font: $heading-xxl;
 }
 
 .heading-xl {
   font: $heading-xl;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    width: 124px;
+    height: 70px;
+    background: rgba(74, 180, 95, 0.22);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
 
 .heading-lg {
@@ -99,4 +115,13 @@ $heading-sm: 600 20px/150% "Poppins", sans-serif;
 
 .heading-md {
   font: $heading-md;
+}
+
+.text-body-xl {
+  font: $text-body-xl;
+}
+
+.text-body-lg {
+  font: $text-body-lg;
+  text-align: justify;
 }
