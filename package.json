@@ -1,0 +1,17 @@
+{
+  "name": "billing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Sabir Nawaz",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

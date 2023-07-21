@@ -1,0 +1,16 @@
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(3, 63, 115, 0.95),
+      rgba(3, 63, 115, 0.95)
+    ),
+    url(../../assets/images/img_hero_bg.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.hero {
+  padding-top: 32px;
+  padding-bottom: 110px;
+  color: #fff;
+}
