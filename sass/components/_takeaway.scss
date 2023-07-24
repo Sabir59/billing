@@ -1,0 +1,33 @@
+.takeaway {
+  padding: 32px;
+  background: #033f73;
+  color: #fff;
+  &__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 200%;
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%; /* 36px */
+  }
+}

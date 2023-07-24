@@ -3,7 +3,7 @@
   border: 2px solid transparent;
   background: transparent;
   display: inline-flex;
-  padding: 12px 28px;
+  padding: 12px clamp(0.63rem, calc(0.37rem + 1.15vw), 1.75rem);
   justify-content: center;
   align-items: center;
   gap: 10px;

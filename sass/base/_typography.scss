@@ -1,6 +1,13 @@
 /* Regular */
 @font-face {
   font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/* Regular */
+@font-face {
+  font-family: "Poppins";
   src: url("../../assets/fonts/poppins-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -79,10 +86,12 @@
 }
 
 // Typography
-$heading-xxl: 600 96px/150% "Poppins", sans-serif;
+$heading-xxl: 600 clamp(2.63rem, calc(1.95rem + 3.38vw), 6rem) / 150% "Poppins",
+  sans-serif;
 $heading-xl: 600 60px/150% "Poppins", sans-serif;
 $heading-lg: 600 32px/150% "Poppins", sans-serif;
-$heading-md: 400 24px/150% "Poppins", sans-serif;
+$heading-md: 400 clamp(1rem, calc(0.9rem + 0.5vw), 1.5rem) / 150% "Poppins",
+  sans-serif;
 $heading-sm: 600 20px/150% "Poppins", sans-serif;
 
 $text-body-xl: 400 20px/200% "Poppins", sans-serif;
