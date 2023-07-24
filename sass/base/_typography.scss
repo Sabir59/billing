@@ -86,7 +86,7 @@
 }
 
 // Typography
-$heading-xxl: 600 clamp(2.63rem, calc(1.95rem + 3.38vw), 6rem) / 150% "Poppins",
+$heading-xxl: 600 clamp(2.63rem, calc(1.95rem + 3.38vw), 6rem) / 1.2 "Poppins",
   sans-serif;
 $heading-xl: 600 60px/150% "Poppins", sans-serif;
 $heading-lg: 600 32px/150% "Poppins", sans-serif;

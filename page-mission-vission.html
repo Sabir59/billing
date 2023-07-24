@@ -1,558 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/vendors/all.min.css" />
-    <!-- Internal StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!-- SubHeader Starts -->
-    <div class="container-fluid py-3">
-      <div class="row justify-content-between">
-        <div class="col-sm-6 col-md-auto">
-          <img src="./assets/images/img_logo.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/vendors/all.min.css" />
+  <!-- Internal StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- SubHeader Starts -->
+  <div class="container-fluid py-3">
+    <div class="row justify-content-between">
+      <div class="col-sm-6 col-md-auto">
+        <img src="./assets/images/img_logo.png" alt="logo" />
+      </div>
+      <div class="col-sm-6 col-md-auto d-flex flex-column gap-2 align-items-end align-items-md-center">
+        <a href="#" class="d-flex gap-2 align-items-center">
+          <i class="fa-solid fa-envelope"></i>
+          example@gmail.com
+        </a>
+        <a href="#" class="d-flex gap-2 align-items-center">
+          <i class="fa-solid fa-phone"></i>
+          +92 356 7676 886
+        </a>
+      </div>
+      <div class="col-md-auto d-none d-md-flex gap-4 align-items-center">
+        <a href="#">
+          <img src="./assets/icons/icon_facebook.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/icon_twitter.png" alt="twitter" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/icon_instagram.png" alt="instagram" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- SubHeader Ends -->
+
+  <!-- Navbar Starts -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Removed the navbar-brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <!-- Moved the form to the left -->
+          <form class="d-flex me-auto search d-flex align-items-center">
+            <i class="fa-solid fa-search"></i>
+            <input class="form-control me-2 search__input" type="search" placeholder="Search here..."
+              aria-label="Search" />
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-0 gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./page-mission-vission.html">Mission / Vision</a>
+                </li>
+                <li><a class="dropdown-item" href="./page-our-team.html">Our Team</a></li>
+                <li><a href="./page-our-values.html" class="dropdown-item" href="#">Core Values</a></li>
+                <li><a class="dropdown-item" href="./page-company-profile.html">Company Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Medical Billing & Coding</a>
+                </li>
+                <li><a class="dropdown-item" href="./page-services.html">RCM Services</a></li>
+                <li><a class="dropdown-item" href="./page-services.html">Credentialing</a></li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Practice Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">AR Follow up & Denial Management</a>
+                </li>
+                <li><a class="dropdown-item" href="./page-services.html">Scribing</a></li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Prior Authorizations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Verification of Benefits</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Website Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Virtual Assistant</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./page-blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a href="./page-faqs.html" class="nav-link text-white">FAQs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Connect with Sales</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Book a Demo</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Request a Free Practice Analysis</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div
-          class="col-sm-6 col-md-auto d-flex flex-column gap-2 align-items-end align-items-md-center"
-        >
-          <a href="#" class="d-flex gap-2 align-items-center">
-            <i class="fa-solid fa-envelope"></i>
-            example@gmail.com
-          </a>
-          <a href="#" class="d-flex gap-2 align-items-center">
-            <i class="fa-solid fa-phone"></i>
-            +92 356 7676 886
-          </a>
+      </div>
+    </nav>
+
+    <!-- Navbar Ends -->
+    <!-- Hero Starts -->
+    <section class="hero">
+      <!-- Content Starts -->
+      <div class="container">
+        <div class="row hero__content">
+          <div class="col-12 hero__text text-center">
+            <h1 class="heading-xxl">Mission & Vision</h1>
+            <p class="heading-md mt-5">
+              Transforming Healthcare Revenue Cycle Management for Optimal
+              Financial Performance and Patient Care Excellence
+            </p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row mt-5">
+            <button class="button button--primary">Book A Demo</button>
+            <button class="button button--secondary">
+              Request a Free Practice Analysis
+            </button>
+          </div>
         </div>
-        <div class="col-md-auto d-none d-md-flex gap-4 align-items-center">
-          <a href="#">
-            <img src="./assets/icons/icon_facebook.png" alt="facebook" />
-          </a>
-          <a href="#">
-            <img src="./assets/icons/icon_twitter.png" alt="twitter" />
-          </a>
-          <a href="#">
-            <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
-          </a>
-          <a href="#">
-            <img src="./assets/icons/icon_instagram.png" alt="instagram" />
-          </a>
+      </div>
+      <!-- Content Ends -->
+    </section>
+  </header>
+  <!-- Hero Ends -->
+  <main>
+    <!-- About Us Starts -->
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us__features">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="heading-lg u-mx-w">OUR MISSION</h3>
+              <p class="text-body-lg">
+                At Prime Doc Billing, our mission is to revolutionize
+                healthcare revenue cycle management by providing exceptional
+                billing and coding solutions that optimize financial
+                performance for healthcare providers. We are dedicated to
+                streamlining the complex billing process, ensuring accuracy,
+                efficiency, and compliance, while maximizing reimbursements.
+                Our ultimate goal is to alleviate administrative burdens for
+                healthcare professionals, allowing them to focus on what
+                matters most – delivering high-quality patient care.
+              </p>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <img src="./assets/images/img_vision.png" alt="Photo" class="about-us__features-photo" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-0">
+              <img src="./assets/images/img_mission.png" alt="Photo" class="about-us__features-photo" />
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <h3 class="heading-lg u-mx-w">OUR VISION</h3>
+              <p class="text-body-lg">
+                Our vision is to become the industry leader in medical billing
+                services, recognized for our unwavering commitment to
+                excellence, innovation, and customer satisfaction. We strive
+                to be the preferred partner for healthcare providers across
+                the nation, empowering them with advanced billing technologies
+                and comprehensive revenue cycle management solutions. By
+                leveraging our expertise and cutting-edge technology, we aim
+                to transform the financial health of healthcare organizations,
+                enabling them to thrive in an ever-evolving healthcare
+                landscape.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="takeaway">
+                <h4 class="takeaway__title">Committed to Excellence</h4>
+                <ul class="takeaway__list">
+                  <li class="takeaway__item">
+                    <img src="./assets/images/img_list.svg" alt="Photo" class="takeaway__photo" />
+                    <div>
+                      <h5 class="takeaway__subtitle">Introduction</h5>
+                      <p class="takeaway__text">
+                        Prime Doc Billing is a leading healthcare billing
+                        company committed to excellence. With a focus on
+                        quality processes, customer satisfaction, continuous
+                        improvement, compliance, and delivering results, Prime
+                        Doc Billing sets itself apart in the industry.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="takeaway__item">
+                    <img src="./assets/images/img_list.svg" alt="Photo" class="takeaway__photo" />
+                    <div>
+                      <h5 class="takeaway__subtitle">Introduction</h5>
+                      <p class="takeaway__text">
+                        Prime Doc Billing is a leading healthcare billing
+                        company committed to excellence. With a focus on
+                        quality processes, customer satisfaction, continuous
+                        improvement, compliance, and delivering results, Prime
+                        Doc Billing sets itself apart in the industry.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="takeaway__item">
+                    <img src="./assets/images/img_list.svg" alt="Photo" class="takeaway__photo" />
+                    <div>
+                      <h5 class="takeaway__subtitle">Introduction</h5>
+                      <p class="takeaway__text">
+                        Prime Doc Billing is a leading healthcare billing
+                        company committed to excellence. With a focus on
+                        quality processes, customer satisfaction, continuous
+                        improvement, compliance, and delivering results, Prime
+                        Doc Billing sets itself apart in the industry.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="takeaway__item">
+                    <img src="./assets/images/img_list.svg" alt="Photo" class="takeaway__photo" />
+                    <div>
+                      <h5 class="takeaway__subtitle">Introduction</h5>
+                      <p class="takeaway__text">
+                        Prime Doc Billing is a leading healthcare billing
+                        company committed to excellence. With a focus on
+                        quality processes, customer satisfaction, continuous
+                        improvement, compliance, and delivering results, Prime
+                        Doc Billing sets itself apart in the industry.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="takeaway__item">
+                    <img src="./assets/images/img_list.svg" alt="Photo" class="takeaway__photo" />
+                    <div>
+                      <h5 class="takeaway__subtitle">Introduction</h5>
+                      <p class="takeaway__text">
+                        Prime Doc Billing is a leading healthcare billing
+                        company committed to excellence. With a focus on
+                        quality processes, customer satisfaction, continuous
+                        improvement, compliance, and delivering results, Prime
+                        Doc Billing sets itself apart in the industry.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="takeaway__item">
+                    <img src="./assets/images/img_list.svg" alt="Photo" class="takeaway__photo" />
+                    <div>
+                      <h5 class="takeaway__subtitle">Introduction</h5>
+                      <p class="takeaway__text">
+                        Prime Doc Billing is a leading healthcare billing
+                        company committed to excellence. With a focus on
+                        quality processes, customer satisfaction, continuous
+                        improvement, compliance, and delivering results, Prime
+                        Doc Billing sets itself apart in the industry.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Ends -->
+  </main>
+
+
+  <!-- Footer Starts -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 footer__text">
+          <h3 class="footer__title">Prime Doc Billing Company</h3>
+          <div
+            class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row">
+            <button class="button button--primary">Book A Demo</button>
+            <button class="button button--secondary">
+              Request a Free Practice Analysis
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__navigation">
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">services</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Medical Billing & Coding</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">RCM Services</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Credentialing</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Practice Management</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">AR Follow up & Denial Management</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Scribing</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Prior Authorizations</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Verification of Benefits</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Website Development</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Virtual Assistant</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">about us</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="./page-mission-vission.html" class="footer__nav-link">Mission / Vision</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-our-team.html" class="footer__nav-link">Our Team</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-our-values.html" class="footer__nav-link">Core Values</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-company-profile.html" class="footer__nav-link">Company Profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">contact us</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">Connect with Sales</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">Book a Demo</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">Request a Free Practice Analysis</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">get in touch</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-envelope"></i>
+                example@gmail.com</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-phone"></i>
+                +92-354 090 990
+              </a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-message"></i>
+                Chat with us
+              </a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-map-marker"></i>
+                Street 24 Los Angles USA
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- SubHeader Ends -->
-
-    <!-- Navbar Starts -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <!-- Removed the navbar-brand -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarSupportedContent"
-          >
-            <!-- Moved the form to the left -->
-            <form class="d-flex me-auto search d-flex align-items-center">
-              <i class="fa-solid fa-search"></i>
-              <input
-                class="form-control me-2 search__input"
-                type="search"
-                placeholder="Search here..."
-                aria-label="Search"
-              />
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0 gap-0 gap-lg-5">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white active"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link text-white dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  About Us
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Mission / Vision</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Our Team</a></li>
-                  <li><a class="dropdown-item" href="#">Core Values</a></li>
-                  <li><a class="dropdown-item" href="#">Company Profile</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link text-white dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Medical Billing & Coding</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">RCM Services</a></li>
-                  <li><a class="dropdown-item" href="#">Credentialing</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Practice Management</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >AR Follow up & Denial Management</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">Scribing</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Prior Authorizations</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Verification of Benefits</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Website Development</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Virtual Assistant</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">FAQs</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link text-white dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact Us
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">Connect with Sales</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Book a Demo</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Request a Free Practice Analysis</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Navbar Ends -->
-      <!-- Hero Starts -->
-      <section class="hero">
-        <!-- Content Starts -->
-        <div class="container">
-          <div class="row hero__content">
-            <div class="col-12 hero__text text-center">
-              <h1 class="heading-xxl">Mission & Vision</h1>
-              <p class="heading-md">
-                Transforming Healthcare Revenue Cycle Management for Optimal
-                Financial Performance and Patient Care Excellence
-              </p>
-            </div>
-            <div
-              class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row"
-            >
-              <button class="button button--primary">Book A Demo</button>
-              <button class="button button--secondary">
-                Request a Free Practice Analysis
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Content Ends -->
-      </section>
-    </header>
-    <!-- Hero Ends -->
-    <main>
-      <!-- About Us Starts -->
-      <section class="about-us">
-        <div class="container">
-          <div class="about-us__features">
-            <div class="row">
-              <div class="col-lg-6">
-                <h3 class="heading-lg u-mx-w">OUR MISSION</h3>
-                <p class="text-body-lg">
-                  At Prime Doc Billing, our mission is to revolutionize
-                  healthcare revenue cycle management by providing exceptional
-                  billing and coding solutions that optimize financial
-                  performance for healthcare providers. We are dedicated to
-                  streamlining the complex billing process, ensuring accuracy,
-                  efficiency, and compliance, while maximizing reimbursements.
-                  Our ultimate goal is to alleviate administrative burdens for
-                  healthcare professionals, allowing them to focus on what
-                  matters most – delivering high-quality patient care.
-                </p>
-              </div>
-              <div class="col-lg-5 offset-lg-1">
-                <img
-                  src="./assets/images/img_vision.png"
-                  alt="Photo"
-                  class="about-us__features-photo"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 order-1 order-lg-0">
-                <img
-                  src="./assets/images/img_mission.png"
-                  alt="Photo"
-                  class="about-us__features-photo"
-                />
-              </div>
-              <div class="col-lg-5 offset-lg-1">
-                <h3 class="heading-lg u-mx-w">OUR VISION</h3>
-                <p class="text-body-lg">
-                  Our vision is to become the industry leader in medical billing
-                  services, recognized for our unwavering commitment to
-                  excellence, innovation, and customer satisfaction. We strive
-                  to be the preferred partner for healthcare providers across
-                  the nation, empowering them with advanced billing technologies
-                  and comprehensive revenue cycle management solutions. By
-                  leveraging our expertise and cutting-edge technology, we aim
-                  to transform the financial health of healthcare organizations,
-                  enabling them to thrive in an ever-evolving healthcare
-                  landscape.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="takeaway">
-                  <h4 class="takeaway__title">Committed to Excellence</h4>
-                  <ul class="takeaway__list">
-                    <li class="takeaway__item">
-                      <img
-                        src="./assets/images/img_list.svg"
-                        alt="Photo"
-                        class="takeaway__photo"
-                      />
-                      <div>
-                        <h5 class="takeaway__subtitle">Introduction</h5>
-                        <p class="takeaway__text">
-                          Prime Doc Billing is a leading healthcare billing
-                          company committed to excellence. With a focus on
-                          quality processes, customer satisfaction, continuous
-                          improvement, compliance, and delivering results, Prime
-                          Doc Billing sets itself apart in the industry.
-                        </p>
-                      </div>
-                    </li>
-                    <li class="takeaway__item">
-                      <img
-                        src="./assets/images/img_list.svg"
-                        alt="Photo"
-                        class="takeaway__photo"
-                      />
-                      <div>
-                        <h5 class="takeaway__subtitle">Introduction</h5>
-                        <p class="takeaway__text">
-                          Prime Doc Billing is a leading healthcare billing
-                          company committed to excellence. With a focus on
-                          quality processes, customer satisfaction, continuous
-                          improvement, compliance, and delivering results, Prime
-                          Doc Billing sets itself apart in the industry.
-                        </p>
-                      </div>
-                    </li>
-                    <li class="takeaway__item">
-                      <img
-                        src="./assets/images/img_list.svg"
-                        alt="Photo"
-                        class="takeaway__photo"
-                      />
-                      <div>
-                        <h5 class="takeaway__subtitle">Introduction</h5>
-                        <p class="takeaway__text">
-                          Prime Doc Billing is a leading healthcare billing
-                          company committed to excellence. With a focus on
-                          quality processes, customer satisfaction, continuous
-                          improvement, compliance, and delivering results, Prime
-                          Doc Billing sets itself apart in the industry.
-                        </p>
-                      </div>
-                    </li>
-                    <li class="takeaway__item">
-                      <img
-                        src="./assets/images/img_list.svg"
-                        alt="Photo"
-                        class="takeaway__photo"
-                      />
-                      <div>
-                        <h5 class="takeaway__subtitle">Introduction</h5>
-                        <p class="takeaway__text">
-                          Prime Doc Billing is a leading healthcare billing
-                          company committed to excellence. With a focus on
-                          quality processes, customer satisfaction, continuous
-                          improvement, compliance, and delivering results, Prime
-                          Doc Billing sets itself apart in the industry.
-                        </p>
-                      </div>
-                    </li>
-                    <li class="takeaway__item">
-                      <img
-                        src="./assets/images/img_list.svg"
-                        alt="Photo"
-                        class="takeaway__photo"
-                      />
-                      <div>
-                        <h5 class="takeaway__subtitle">Introduction</h5>
-                        <p class="takeaway__text">
-                          Prime Doc Billing is a leading healthcare billing
-                          company committed to excellence. With a focus on
-                          quality processes, customer satisfaction, continuous
-                          improvement, compliance, and delivering results, Prime
-                          Doc Billing sets itself apart in the industry.
-                        </p>
-                      </div>
-                    </li>
-                    <li class="takeaway__item">
-                      <img
-                        src="./assets/images/img_list.svg"
-                        alt="Photo"
-                        class="takeaway__photo"
-                      />
-                      <div>
-                        <h5 class="takeaway__subtitle">Introduction</h5>
-                        <p class="takeaway__text">
-                          Prime Doc Billing is a leading healthcare billing
-                          company committed to excellence. With a focus on
-                          quality processes, customer satisfaction, continuous
-                          improvement, compliance, and delivering results, Prime
-                          Doc Billing sets itself apart in the industry.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Us Ends -->
-    </main>
-
-    <!-- Footer Starts -->
-    <footer class="footer">
+    <div class="footer__bottom">
       <div class="container">
-        <div class="row">
-          <div class="col-12 footer__text">
-            <h3 class="footer__title">Prime Doc Billing Company</h3>
-            <div
-              class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row"
-            >
-              <button class="button button--primary">Book A Demo</button>
-              <button class="button button--secondary">
-                Request a Free Practice Analysis
-              </button>
-            </div>
+        <div class="row align-items-center">
+          <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3">
+            <img src="./assets/images/img_logo.png" alt="logo" class="footer__logo" />
           </div>
-        </div>
-        <div class="row footer__navigation">
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">contact us</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Mission / Vision</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Our Team</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Core Values</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Company Profile</a>
-              </li>
-            </ul>
+          <div class="col-md-4 d-flex justify-content-center">
+            <p class="footer__copyrights">
+              © 2023 Prime Doc Billing. All Rights Reserved.
+            </p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">about us</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Connect with Sales</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Book a Demo</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link"
-                  >Request a Free Practice Analysis</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">services</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Website Development</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link"
-                  >Medical Billing & Coding</a
-                >
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Practice Managment</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Scribing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">get in touch</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-envelope"></i>
-                  example@gmail.com</a
-                >
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-phone"></i>
-                  +92-354 090 990
-                </a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-message"></i>
-                  Chat with us
-                </a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-map-marker"></i>
-                  Street 24 Los Angles USA
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-12">
-            <div class="footer__divider">&nbsp;</div>
-          </div>
-        </div> -->
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="row align-items-center">
-            <div
-              class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3"
-            >
-              <img
-                src="./assets/images/img_logo.png"
-                alt="logo"
-                class="footer__logo"
-              />
-            </div>
-            <div class="col-md-4 d-flex justify-content-center">
-              <p class="footer__copyrights">
-                © 2023 Prime Doc Billing. All Rights Reserved.
-              </p>
-            </div>
-            <div
-              class="col-md-4 d-flex justify-content-center justify-content-md-end mb-3"
-            >
-              <div class="col-md-auto d-flex gap-4 align-items-center">
-                <a href="#">
-                  <img src="./assets/icons/icon_facebook.png" alt="facebook" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/icon_twitter.png" alt="twitter" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
-                </a>
-                <a href="#">
-                  <img
-                    src="./assets/icons/icon_instagram.png"
-                    alt="instagram"
-                  />
-                </a>
-              </div>
+          <div class="col-md-4 d-flex justify-content-center justify-content-md-end mb-3">
+            <div class="col-md-auto d-flex gap-4 align-items-center">
+              <a href="#">
+                <img src="./assets/icons/icon_facebook.png" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/icon_twitter.png" alt="twitter" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/icon_instagram.png" alt="instagram" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Ends -->
-    <!-- External Scripts -->
-    <script src="./js/vendors/bootstrap.min.js"></script>
-    <script src="./js/plugins/popper.min.js"></script>
-    <script src="js/vendors/all.min.js"></script>
-  </body>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+  <!-- External Scripts -->
+  <script src="./js/vendors/bootstrap.min.js"></script>
+  <script src="./js/plugins/popper.min.js"></script>
+  <script src="js/vendors/all.min.js"></script>
+</body>
+
 </html>

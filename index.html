@@ -1,955 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/vendors/all.min.css" />
-    <!-- Internal StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!-- SubHeader Starts -->
-    <div class="container-fluid py-3">
-      <div class="row justify-content-between">
-        <div class="col-sm-6 col-md-auto">
-          <img src="./assets/images/img_logo.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/vendors/all.min.css" />
+  <!-- Internal StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- SubHeader Starts -->
+  <div class="container-fluid py-3">
+    <div class="row justify-content-between">
+      <div class="col-sm-6 col-md-auto">
+        <img src="./assets/images/img_logo.png" alt="logo" />
+      </div>
+      <div class="col-sm-6 col-md-auto d-flex flex-column gap-2 align-items-end align-items-md-center">
+        <a href="#" class="d-flex gap-2 align-items-center">
+          <i class="fa-solid fa-envelope"></i>
+          example@gmail.com
+        </a>
+        <a href="#" class="d-flex gap-2 align-items-center">
+          <i class="fa-solid fa-phone"></i>
+          +92 356 7676 886
+        </a>
+      </div>
+      <div class="col-md-auto d-none d-md-flex gap-4 align-items-center">
+        <a href="#">
+          <img src="./assets/icons/icon_facebook.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/icon_twitter.png" alt="twitter" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
+        </a>
+        <a href="#">
+          <img src="./assets/icons/icon_instagram.png" alt="instagram" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- SubHeader Ends -->
+
+  <!-- Navbar Starts -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Removed the navbar-brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <!-- Moved the form to the left -->
+          <form class="d-flex me-auto search d-flex align-items-center">
+            <i class="fa-solid fa-search"></i>
+            <input class="form-control me-2 search__input" type="search" placeholder="Search here..."
+              aria-label="Search" />
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-0 gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./page-mission-vission.html">Mission / Vision</a>
+                </li>
+                <li><a class="dropdown-item" href="./page-our-team.html">Our Team</a></li>
+                <li><a href="./page-our-values.html" class="dropdown-item" href="#">Core Values</a></li>
+                <li><a class="dropdown-item" href="./page-company-profile.html">Company Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Medical Billing & Coding</a>
+                </li>
+                <li><a class="dropdown-item" href="./page-services.html">RCM Services</a></li>
+                <li><a class="dropdown-item" href="./page-services.html">Credentialing</a></li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Practice Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">AR Follow up & Denial Management</a>
+                </li>
+                <li><a class="dropdown-item" href="./page-services.html">Scribing</a></li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Prior Authorizations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Verification of Benefits</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Website Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./page-services.html">Virtual Assistant</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./page-blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a href="./page-faqs.html" class="nav-link text-white">FAQs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Connect with Sales</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Book a Demo</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Request a Free Practice Analysis</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div
-          class="col-sm-6 col-md-auto d-flex flex-column gap-2 align-items-end align-items-md-center"
-        >
-          <a href="#" class="d-flex gap-2 align-items-center">
-            <i class="fa-solid fa-envelope"></i>
-            example@gmail.com
-          </a>
-          <a href="#" class="d-flex gap-2 align-items-center">
-            <i class="fa-solid fa-phone"></i>
-            +92 356 7676 886
-          </a>
+      </div>
+    </nav>
+
+    <!-- Navbar Ends -->
+    <!-- Hero Starts -->
+    <section class="hero">
+      <!-- Content Starts -->
+      <div class="container">
+        <div class="row hero__content">
+          <div class="col-12 hero__text text-center">
+            <h1 class="heading-xxl">Best billing services</h1>
+            <p class="heading-md mt-5">
+              Prime Doc Billing is designed specifically with practices like
+              yours in mind and is packed with features designed to make you
+              more efficient
+            </p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row mt-5">
+            <button class="button button--primary">Book A Demo</button>
+            <button class="button button--secondary">
+              Request a Free Practice Analysis
+            </button>
+          </div>
         </div>
-        <div class="col-md-auto d-none d-md-flex gap-4 align-items-center">
-          <a href="#">
-            <img src="./assets/icons/icon_facebook.png" alt="facebook" />
-          </a>
-          <a href="#">
-            <img src="./assets/icons/icon_twitter.png" alt="twitter" />
-          </a>
-          <a href="#">
-            <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
-          </a>
-          <a href="#">
-            <img src="./assets/icons/icon_instagram.png" alt="instagram" />
-          </a>
+      </div>
+      <!-- Content Ends -->
+    </section>
+  </header>
+  <!-- Hero Ends -->
+  <main>
+    <!-- About Us Starts -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row main__intro">
+          <div class="col-12 section-text">
+            <h2 class="heading-xl">About Us</h2>
+            <p class="text-body-xl">
+              Prime Doc Billing, a leading medical billing company dedicated
+              to simplifying the billing process for healthcare providers.
+              With years of experience and a team of industry experts, we are
+              committed to maximizing revenue, minimizing administrative
+              burdens, and improving overall financial performance for medical
+              practices of all sizes.
+            </p>
+          </div>
+        </div>
+        <div class="about-us__features">
+          <div class="row">
+            <div class="col-lg-5">
+              <h3 class="heading-lg u-mx-w">FAST GROWING HEALTHCARE FIRM</h3>
+              <p class="text-body-lg">
+                In today's fast-paced and highly competitive world, modern
+                independent practices are increasingly reliant on advanced
+                software and cutting-edge services to automate and streamline
+                their workflows. Staying competitive in the healthcare
+                industry demands efficiency and connectivity, which is why
+                patients now more than ever seek to be closely connected to
+                their healthcare experiences. Our comprehensive suite of
+                solutions offers a range of legendary billing features,
+                ensuring seamless and efficient financial operations for
+                independent practices. With flexible scheduling capabilities,
+                practices can optimize their appointment management, enabling
+                better patient care and resource allocation.
+              </p>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <div class="fast-cards">
+                <div class="fast-card">
+                  <div class="fast-card__body">
+                    <h4 class="fast-card__title">250k+</h4>
+                    <p class="fast-card__text">
+                      Local and international patients annually
+                    </p>
+                  </div>
+                </div>
+                <div class="fast-card">
+                  <div class="fast-card__body">
+                    <h4 class="fast-card__title">250k+</h4>
+                    <p class="fast-card__text">
+                      Local and international patients annually
+                    </p>
+                  </div>
+                </div>
+                <div class="fast-card">
+                  <div class="fast-card__body">
+                    <h4 class="fast-card__title">250k+</h4>
+                    <p class="fast-card__text">
+                      Local and international patients annually
+                    </p>
+                  </div>
+                </div>
+                <div class="fast-card">
+                  <div class="fast-card__body">
+                    <h4 class="fast-card__title">250k+</h4>
+                    <p class="fast-card__text">
+                      Local and international patients annually
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-lg-5 order-1 order-lg-0">
+              <img src="./assets/images/img_vision.png" alt="Photo" class="about-us__features-photo" />
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <h3 class="heading-lg u-mx-w">FAST GROWING HEALTHCARE FIRM</h3>
+              <p class="text-body-lg">
+                Modern independent practices need software and services to
+                automate and streamline workflow to remain competitive. And
+                patients today want to be more connected to their healthcare
+                experience. Our suite includes legendary billing, flexible
+                scheduling, simple charting, accurate reporting, and
+                easy-to-use patient relationship management tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Ends -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row main__intro">
+          <div class="col-12 section-text">
+            <h2 class="heading-xl">Services</h2>
+            <p class="text-body-xl">
+              Discover the capabilities of our trusted team at Prime Doc
+              Billing. With a proven track record and satisfied clients, we
+              deliver excellence. Your satisfaction matters to us. Hear from
+              our clients and experience our expertise firsthand.
+            </p>
+          </div>
+        </div>
+        <!-- Cards Starts -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="./page-services.html" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="service-card">
+              <div class="service-card__side service-card__side--front">
+                <div class="service-card__frame">
+                  <img src="./assets/images/img_service_crm.png" alt="CRM" class="service-card__photo" />
+                </div>
+                <div class="service-card__content">
+                  <h4 class="service-card__title">
+                    Medical Billing & Coding
+                  </h4>
+                  <p class="service-card__text">
+                    Efficiently submit claims with us. Our seamless process
+                    ensures accurate and timely submissions for providers,
+                    maximizing reimbursement. Trust us with your claims while
+                    you prioritize patient care.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card__side service-card__side--back service-card__side--back-1">
+                <div class="service-card__cta">
+                  <a href="#popup" class="button button--primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cards Ends -->
+      </div>
+    </section>
+    <!-- About Us Starts -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row main__intro">
+          <div class="col-12 section-text">
+            <h2 class="heading-xl">FAQ's</h2>
+            <p class="text-body-xl">
+              Discover the capabilities of our trusted team at Prime Doc
+              Billing. With a proven track record and satisfied clients, we
+              deliver excellence. Your satisfaction matters to us. Hear from
+              our clients and experience our expertise firsthand.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="accordion custom-accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong>
+                    It is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element.
+                    These classes control the overall appearance, as well as
+                    the showing and hiding via CSS transitions. You can modify
+                    any of this with custom CSS or overriding our default
+                    variables. It's also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion__button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds
+                    the appropriate classes that we use to style each element.
+                    These classes control the overall appearance, as well as
+                    the showing and hiding via CSS transitions. You can modify
+                    any of this with custom CSS or overriding our default
+                    variables. It's also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion__button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds
+                    the appropriate classes that we use to style each element.
+                    These classes control the overall appearance, as well as
+                    the showing and hiding via CSS transitions. You can modify
+                    any of this with custom CSS or overriding our default
+                    variables. It's also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Ends -->
+  </main>
+
+  <!-- Footer Starts -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 footer__text">
+          <h3 class="footer__title">Prime Doc Billing Company</h3>
+          <div
+            class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row">
+            <button class="button button--primary">Book A Demo</button>
+            <button class="button button--secondary">
+              Request a Free Practice Analysis
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__navigation">
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">services</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Medical Billing & Coding</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">RCM Services</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Credentialing</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Practice Management</a>
+            </li>
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">AR Follow up & Denial Management</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Scribing</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Prior Authorizations</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Verification of Benefits</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Website Development</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-services.html" class="footer__nav-link">Virtual Assistant</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">about us</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="./page-mission-vission.html" class="footer__nav-link">Mission / Vision</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-our-team.html" class="footer__nav-link">Our Team</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-our-values.html" class="footer__nav-link">Core Values</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="./page-company-profile.html" class="footer__nav-link">Company Profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">contact us</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">Connect with Sales</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">Book a Demo</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">Request a Free Practice Analysis</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer__nav-title">get in touch</h5>
+          <ul class="footer__navlist">
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-envelope"></i>
+                example@gmail.com</a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-phone"></i>
+                +92-354 090 990
+              </a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-message"></i>
+                Chat with us
+              </a>
+            </li>
+
+            <li class="footer__navitem">
+              <a href="#" class="footer__nav-link">
+                <i class="fa-solid fa-map-marker"></i>
+                Street 24 Los Angles USA
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- SubHeader Ends -->
-
-    <!-- Navbar Starts -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <!-- Removed the navbar-brand -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarSupportedContent"
-          >
-            <!-- Moved the form to the left -->
-            <form class="d-flex me-auto search d-flex align-items-center">
-              <i class="fa-solid fa-search"></i>
-              <input
-                class="form-control me-2 search__input"
-                type="search"
-                placeholder="Search here..."
-                aria-label="Search"
-              />
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0 gap-0 gap-lg-5">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white active"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link text-white dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  About Us
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="./page-mission-vission.html"
-                      >Mission / Vision</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">Our Team</a></li>
-                  <li><a class="dropdown-item" href="#">Core Values</a></li>
-                  <li><a class="dropdown-item" href="#">Company Profile</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link text-white dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Medical Billing & Coding</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">RCM Services</a></li>
-                  <li><a class="dropdown-item" href="#">Credentialing</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Practice Management</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >AR Follow up & Denial Management</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">Scribing</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Prior Authorizations</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Verification of Benefits</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Website Development</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Virtual Assistant</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">FAQs</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link text-white dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact Us
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">Connect with Sales</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Book a Demo</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Request a Free Practice Analysis</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Navbar Ends -->
-      <!-- Hero Starts -->
-      <section class="hero">
-        <!-- Content Starts -->
-        <div class="container">
-          <div class="row hero__content">
-            <div class="col-12 hero__text text-center">
-              <h1 class="heading-xxl">Best billing services</h1>
-              <p class="heading-md">
-                Prime Doc Billing is designed specifically with practices like
-                yours in mind and is packed with features designed to make you
-                more efficient
-              </p>
-            </div>
-            <div
-              class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row"
-            >
-              <button class="button button--primary">Book A Demo</button>
-              <button class="button button--secondary">
-                Request a Free Practice Analysis
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Content Ends -->
-      </section>
-    </header>
-    <!-- Hero Ends -->
-    <main>
-      <!-- About Us Starts -->
-      <section class="about-us">
-        <div class="container">
-          <div class="row main__intro">
-            <div class="col-12 section-text">
-              <h2 class="heading-xl">About Us</h2>
-              <p class="text-body-xl">
-                Prime Doc Billing, a leading medical billing company dedicated
-                to simplifying the billing process for healthcare providers.
-                With years of experience and a team of industry experts, we are
-                committed to maximizing revenue, minimizing administrative
-                burdens, and improving overall financial performance for medical
-                practices of all sizes.
-              </p>
-            </div>
-          </div>
-          <div class="about-us__features">
-            <div class="row">
-              <div class="col-lg-5">
-                <h3 class="heading-lg u-mx-w">FAST GROWING HEALTHCARE FIRM</h3>
-                <p class="text-body-lg">
-                  In today's fast-paced and highly competitive world, modern
-                  independent practices are increasingly reliant on advanced
-                  software and cutting-edge services to automate and streamline
-                  their workflows. Staying competitive in the healthcare
-                  industry demands efficiency and connectivity, which is why
-                  patients now more than ever seek to be closely connected to
-                  their healthcare experiences. Our comprehensive suite of
-                  solutions offers a range of legendary billing features,
-                  ensuring seamless and efficient financial operations for
-                  independent practices. With flexible scheduling capabilities,
-                  practices can optimize their appointment management, enabling
-                  better patient care and resource allocation.
-                </p>
-              </div>
-              <div class="col-lg-6 offset-lg-1">
-                <div class="fast-cards">
-                  <div class="fast-card">
-                    <div class="fast-card__body">
-                      <h4 class="fast-card__title">250k+</h4>
-                      <p class="fast-card__text">
-                        Local and international patients annually
-                      </p>
-                    </div>
-                  </div>
-                  <div class="fast-card">
-                    <div class="fast-card__body">
-                      <h4 class="fast-card__title">250k+</h4>
-                      <p class="fast-card__text">
-                        Local and international patients annually
-                      </p>
-                    </div>
-                  </div>
-                  <div class="fast-card">
-                    <div class="fast-card__body">
-                      <h4 class="fast-card__title">250k+</h4>
-                      <p class="fast-card__text">
-                        Local and international patients annually
-                      </p>
-                    </div>
-                  </div>
-                  <div class="fast-card">
-                    <div class="fast-card__body">
-                      <h4 class="fast-card__title">250k+</h4>
-                      <p class="fast-card__text">
-                        Local and international patients annually
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-between">
-              <div class="col-lg-5 order-1 order-lg-0">
-                <img src="./assets/images/img_vision.png" alt="Photo" class="about-us__features-photo"/>
-              </div>
-              <div class="col-lg-6 offset-lg-1">
-                <h3 class="heading-lg u-mx-w">FAST GROWING HEALTHCARE FIRM</h3>
-                <p class="text-body-lg">
-                  Modern independent practices need software and services to
-                  automate and streamline workflow to remain competitive. And
-                  patients today want to be more connected to their healthcare
-                  experience. Our suite includes legendary billing, flexible
-                  scheduling, simple charting, accurate reporting, and
-                  easy-to-use patient relationship management tools.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Us Ends -->
-      <section class="about-us">
-        <div class="container">
-          <div class="row main__intro">
-            <div class="col-12 section-text">
-              <h2 class="heading-xl">Services</h2>
-              <p class="text-body-xl">
-                Discover the capabilities of our trusted team at Prime Doc
-                Billing. With a proven track record and satisfied clients, we
-                deliver excellence. Your satisfaction matters to us. Hear from
-                our clients and experience our expertise firsthand.
-              </p>
-            </div>
-          </div>
-          <!-- Cards Starts -->
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5">
-              <div class="service-card">
-                <div class="service-card__side service-card__side--front">
-                  <div class="service-card__frame">
-                    <img
-                      src="./assets/images/img_service_crm.png"
-                      alt="CRM"
-                      class="service-card__photo"
-                    />
-                  </div>
-                  <div class="service-card__content">
-                    <h4 class="service-card__title">
-                      Medical Billing & Coding
-                    </h4>
-                    <p class="service-card__text">
-                      Efficiently submit claims with us. Our seamless process
-                      ensures accurate and timely submissions for providers,
-                      maximizing reimbursement. Trust us with your claims while
-                      you prioritize patient care.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="service-card__side service-card__side--back service-card__side--back-1"
-                >
-                  <div class="service-card__cta">
-                    <a href="#popup" class="button button--primary"
-                      >Read more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Cards Ends -->
-        </div>
-      </section>
-      <!-- About Us Starts -->
-      <section class="about-us">
-        <div class="container">
-          <div class="row main__intro">
-            <div class="col-12 section-text">
-              <h2 class="heading-xl">FAQ's</h2>
-              <p class="text-body-xl">
-                Discover the capabilities of our trusted team at Prime Doc
-                Billing. With a proven track record and satisfied clients, we
-                deliver excellence. Your satisfaction matters to us. Hear from
-                our clients and experience our expertise firsthand.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-lg-10 mx-auto">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Us Ends -->
-    </main>
-
-    <!-- Footer Starts -->
-    <footer class="footer">
+    <div class="footer__bottom">
       <div class="container">
-        <div class="row">
-          <div class="col-12 footer__text">
-            <h3 class="footer__title">Prime Doc Billing Company</h3>
-            <div
-              class="col-12 d-flex justify-content-center align-items-stretch align-items-md-center gap-4 flex-column flex-md-row"
-            >
-              <button class="button button--primary">Book A Demo</button>
-              <button class="button button--secondary">
-                Request a Free Practice Analysis
-              </button>
-            </div>
+        <div class="row align-items-center">
+          <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3">
+            <img src="./assets/images/img_logo.png" alt="logo" class="footer__logo" />
           </div>
-        </div>
-        <div class="row footer__navigation">
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">contact us</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Mission / Vision</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Our Team</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Core Values</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Company Profile</a>
-              </li>
-            </ul>
+          <div class="col-md-4 d-flex justify-content-center">
+            <p class="footer__copyrights">
+              © 2023 Prime Doc Billing. All Rights Reserved.
+            </p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">about us</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Connect with Sales</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Book a Demo</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link"
-                  >Request a Free Practice Analysis</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">services</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Website Development</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link"
-                  >Medical Billing & Coding</a
-                >
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Practice Managment</a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">Scribing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h5 class="footer__nav-title">get in touch</h5>
-            <ul class="footer__navlist">
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-envelope"></i>
-                  example@gmail.com</a
-                >
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-phone"></i>
-                  +92-354 090 990
-                </a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-message"></i>
-                  Chat with us
-                </a>
-              </li>
-
-              <li class="footer__navitem">
-                <a href="#" class="footer__nav-link">
-                  <i class="fa-solid fa-map-marker"></i>
-                  Street 24 Los Angles USA
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-12">
-            <div class="footer__divider">&nbsp;</div>
-          </div>
-        </div> -->
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="row align-items-center">
-            <div
-              class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3"
-            >
-              <img
-                src="./assets/images/img_logo.png"
-                alt="logo"
-                class="footer__logo"
-              />
-            </div>
-            <div class="col-md-4 d-flex justify-content-center">
-              <p class="footer__copyrights">
-                © 2023 Prime Doc Billing. All Rights Reserved.
-              </p>
-            </div>
-            <div
-              class="col-md-4 d-flex justify-content-center justify-content-md-end mb-3"
-            >
-              <div class="col-md-auto d-flex gap-4 align-items-center">
-                <a href="#">
-                  <img src="./assets/icons/icon_facebook.png" alt="facebook" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/icon_twitter.png" alt="twitter" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
-                </a>
-                <a href="#">
-                  <img
-                    src="./assets/icons/icon_instagram.png"
-                    alt="instagram"
-                  />
-                </a>
-              </div>
+          <div class="col-md-4 d-flex justify-content-center justify-content-md-end mb-3">
+            <div class="col-md-auto d-flex gap-4 align-items-center">
+              <a href="#">
+                <img src="./assets/icons/icon_facebook.png" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/icon_twitter.png" alt="twitter" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/icon_linkedin.png" alt="linkedin" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/icon_instagram.png" alt="instagram" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Ends -->
-    <!-- External Scripts -->
-    <script src="./js/vendors/bootstrap.min.js"></script>
-    <script src="./js/plugins/popper.min.js"></script>
-    <script src="js/vendors/all.min.js"></script>
-  </body>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+  <!-- External Scripts -->
+  <script src="./js/vendors/bootstrap.min.js"></script>
+  <script src="./js/plugins/popper.min.js"></script>
+  <script src="js/vendors/all.min.js"></script>
+</body>
+
 </html>

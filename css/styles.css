@@ -11959,7 +11959,7 @@ img {
   font-style: italic;
 }
 .heading-xxl {
-  font: 600 clamp(2.63rem, 1.95rem + 3.38vw, 6rem)/150% "Poppins", sans-serif;
+  font: 600 clamp(2.63rem, 1.95rem + 3.38vw, 6rem)/1.2 "Poppins", sans-serif;
 }
 
 .heading-xl {
@@ -12371,6 +12371,10 @@ main > * {
   background: #033f73;
   color: #fff;
 }
+.takeaway--services {
+  background: #fff;
+  color: #222222;
+}
 .takeaway__title {
   font-size: 32px;
   font-style: normal;
@@ -12378,6 +12382,7 @@ main > * {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 32px;
+  max-width: 600px;
 }
 .takeaway__list {
   list-style: none;
@@ -12398,6 +12403,19 @@ main > * {
   font-style: normal;
   font-weight: 700;
   line-height: 200%; /* 36px */
+}
+
+.custom-accordion {
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.1)) drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.1));
+}
+.custom-accordion__button {
+  border-bottom: 1px solid #d9dbe9;
+}
+.custom-accordion__button::after {
+  background-image: url("../../assets/icons/icon_accordion_plus.svg") !important;
+}
+.custom-accordion__button:not(.collapsed)::after {
+  background-image: url("../../assets/icons/icon_accordion_dash.svg") !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

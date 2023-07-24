@@ -1,0 +1,15 @@
+.custom-accordion {
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.1));
+  &__button {
+    border-bottom: 1px solid #d9dbe9;
+    &::after {
+      background-image: url("../../assets/icons/icon_accordion_plus.svg") !important;
+    //   transform: none !important;
+    }
+
+    &:not(.collapsed)::after {
+      background-image: url("../../assets/icons/icon_accordion_dash.svg") !important;
+    }
+  }
+}
