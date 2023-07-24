@@ -6,9 +6,18 @@
   height: 550px;
   &__content {
     padding: 32px;
+    color: #232e52;
   }
-  &__photo {
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 260px;
+    margin-bottom: 24px;
   }
+  &__text {
+    line-height: 28px;
+  }
+
   &__frame {
     display: flex;
     justify-content: center;
@@ -39,11 +48,11 @@
       &-1 {
         background: #033f73;
       }
-      
+
       &-2 {
         background: #033f73;
       }
-      
+
       &-3 {
         background: #033f73;
       }
