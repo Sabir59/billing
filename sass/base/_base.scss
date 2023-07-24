@@ -2,6 +2,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.u-mx-w{
+.u-mx-w {
   max-width: 440px;
+}
+.navbar-toggler--custom {
+  background-color: #fff;
+  border: #fff;
+
+  &:focus {
+    border: #fff;
+  }
 }

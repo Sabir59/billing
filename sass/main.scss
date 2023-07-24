@@ -1,6 +1,3 @@
-// // Abstracts
-// @import "./abstracts/variables";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 // Abstracts
 @import "./abstracts/variables";
 
@@ -23,3 +20,4 @@
 @import "./components/accordion";
 @import "./components/blog-card";
 @import "./components/dropdown";
+@import "./components/demo-form";

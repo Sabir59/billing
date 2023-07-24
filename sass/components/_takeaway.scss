@@ -4,8 +4,13 @@
   color: #fff;
 
   &--services {
-    background: #fff;
+    background-color: #fff;
     color: #222222;
+  }
+  &--website-dev {
+    background-image: url("../../assets/images/img_website_development.png");
+    background-position: center;
+    background-size: contain;
   }
   &__title {
     font-size: 32px;
