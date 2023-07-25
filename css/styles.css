@@ -702,4 +702,15 @@ main > * {
   line-height: inherit;
 }
 
+.choose-card {
+  padding: 20px;
+  box-shadow: 8px 8px 16px 0px rgba(61, 66, 167, 0.1), -8px -8px 16px 0px rgba(46, 49, 143, 0.1);
+}
+
+.grid__choose-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
 /*# sourceMappingURL=styles.css.map */
