@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <!-- External StyleSheets -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/vendors/all.min.css" />
   <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
@@ -181,8 +185,49 @@
     </section>
   </header>
   <!-- Hero Ends -->
+  <div class="container-fluid my-4 my-md-5">
+    <div class="testimonial-slider row" style="height: 100px;">
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+      <div class="col-auto">
+        <img src="./assets/images/ecw.png" alt="logo">
+      </div>
+    </div>
+  </div>
   <main>
     <!-- About Us Starts -->
+
     <section class="about-us">
       <div class="container">
         <div class="row main__intro">
@@ -277,11 +322,11 @@
                     data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <img src="./assets/images/img_list_blue.svg" alt="Photo" class="takeaway__photo" />
                     <div>
-                      <h5 class="takeaway__subtitle">Cutting-Edge Solutions:</h5>
+                      <h5 class="takeaway__subtitle">Experienced Industry Expertise:</h5>
                       <p class="takeaway__text">
-                        Our team of highly skilled software developers utilizes the latest
-                        technologies and methodologies to create innovative and customized
-                        solutions tailored to meet your specific business needs.
+                        Our medical billing company boasts a team of experienced professionals with a deep understanding
+                        of the intricate medical billing landscape. With years of industry experience, we navigate
+                        complex coding systems, insurance regulations, and billing procedures with precision.
                       </p>
                     </div>
                   </li>
@@ -289,11 +334,13 @@
                     data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <img src="./assets/images/img_list_blue.svg" alt="Photo" class="takeaway__photo" />
                     <div>
-                      <h5 class="takeaway__subtitle">End-to-End Development:</h5>
+                      <h5 class="takeaway__subtitle">Cutting-Edge Technology Integration:</h5>
                       <p class="takeaway__text">
-                        We offer comprehensive software development services, starting from
-                        concept and design to development, testing, and deployment. Our holistic
-                        approach ensures a seamless and hassle-free development process.
+                        At our medical billing company, we leverage state-of-the-art technology to streamline and
+                        enhance the billing process. Our integrated software solutions automate billing tasks, from
+                        claim submission to payment reconciliation. This reduces administrative burden for your
+                        practice,
+                        accelerates payment cycles, and provides real-time insights into your financial performance.
                       </p>
                     </div>
                   </li>
@@ -301,12 +348,11 @@
                     data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <img src="./assets/images/img_list_blue.svg" alt="Photo" class="takeaway__photo" />
                     <div>
-                      <h5 class="takeaway__subtitle">Expert Team:</h5>
+                      <h5 class="takeaway__subtitle">Customized Solutions for Every Practice:</h5>
                       <p class="takeaway__text">
-                        Our developers are industry experts with extensive experience in various
-                        programming languages and frameworks. They bring a deep understanding of
-                        software architecture and best practices to deliver robust and scalable
-                        solutions.
+                        We recognize that each medical practice is unique, which is why we offer tailor-made billing
+                        solutions that align with your specific needs. Our dedicated team collaborates closely with your
+                        practice to understand its nuances, challenges, and goals.
                       </p>
                     </div>
                   </li>
@@ -955,8 +1001,25 @@
   <script src="./js/plugins/popper.min.js"></script>
   <script src="js/vendors/all.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     AOS.init()
+    $(document).ready(function () {
+      $('.testimonial-slider').slick({
+        infinite: true,
+        speed: 3000, // Adjust transition speed
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0, // Set to 0 for smoother autoplay
+        centerMode: true,
+        cssEase: 'linear', // Use linear easing for smoother motion
+        variableWidth: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        arrows: false
+      });
+    });
   </script>
 </body>
 
